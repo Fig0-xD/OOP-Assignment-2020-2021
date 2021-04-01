@@ -1,6 +1,6 @@
 # Indentation of an unindented code
 
-## Problem Statement
+### Problem Statement
 
 Read as input an unindented C/C++ program from a C/C++ file, them write a function `indent()` to convert the input code into an indented code. The **intended code** should be saved in another file *“indent.c”* and display it.
 
