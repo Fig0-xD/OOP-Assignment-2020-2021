@@ -1,4 +1,4 @@
-# 1. Dealing with Large Numbers even beyond the range of long long int
+# Dealing with Large Numbers even beyond the range of long long int
 
 ### Problem Statement
 Adding two numbers is trivial. In C/C++, the simple mathematical expression such as `sum = a + b` will add variable 'a' and 'b' and put the result in the variable 'sum'. 
