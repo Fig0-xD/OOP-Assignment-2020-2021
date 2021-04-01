@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstring>
+
+
+string get_24(string& time12)
+{
+	string am_pm = time12.substr(5, 2), hours = time12.substr(0,2);
+	string time24;
+	
+	cout<<am_pm<<" "<<hours<<endl;
+	
+	if(am_pm == "AM") 
+	{
+		if (hours == "12")
+		time24 = "00:" + time12.substr(3, 2);
+		else
+		time24 = time12.substr(0, 5);
+	}
+	else
+	{
+		if (hours == "12")
+		time24 = time24 = time12.substr(0, 5);
+		else
+		{
+			int hours_int  = 12 + stoi(hours);
+			
+			hours[0] = static_cast<char>('0' + hours_int/10);
+			hours[1] = static_cast<char>('0' + hours_int%10);
+			
+			time24 = hours + ':' + time12.substr(3, 2);
+		}
+	}
+	return time24;
+}
+
+
+int main()
+{
+	
+	string time;
+	cout<<"Enter time in 12 hour format: ";
+	cin>>time;
+	
+	string time_converted = get_24(time);
+	
+	cout<<"The time in 24 hour format: "<<time_converted;
+	cout<<"Exiting program...."<<endl;
+	
+	return 0;
+}
+
+
