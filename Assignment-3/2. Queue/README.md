@@ -1,7 +1,7 @@
 # Implement a queue class
 
 ### You should have atleast these member functions:  
-* initialize (construct)
+* initialize *(construct)*
 * deconstruct 
 * push 
 * pop 
