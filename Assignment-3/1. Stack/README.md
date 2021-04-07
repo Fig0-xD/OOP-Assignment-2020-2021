@@ -9,4 +9,4 @@
 * isempty
 * isfull, etc. 
 
-**Show the use of the class by creating objects and calling the member functions**
+Show the use of the class by creating objects and calling the member functions
